@@ -3,8 +3,10 @@ import { combineReducers } from 'redux';
 
 const reducers = combineReducers({
     reducer:{
-        reddit:reddit.reducer,
-        subreddit: subreddit.reducer
+        reddit:{
+            name:'reddit',
+            initialState:{posts:{}}
+        }
     
     }
 } 

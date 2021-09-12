@@ -1,0 +1,89 @@
+.App{
+    width : 100vw;
+    height:100vh;
+    display:flexbox;
+    flex-flow: row nowrap;
+    background-color: var(--background-color)
+}
+
+.Avatar{
+    display: inline-flexbox;
+    flex-flow:column;
+    padding-right: 15px;
+}
+
+.title{
+    font-family: var(--reddit-author-subreddit-heading-subreddit-name-font);
+}
+
+.avatar-image{
+    border-radius: 50%;
+    align-self: center;
+}
+
+.Post{
+    display:flexbox;
+    flex-flow:column nowrap;
+    max-width: 55vw;
+    max-height: 45vh;
+    margin: 20px;
+    background-color: var(--reddit-subreddit-card-background);
+}
+
+.PostWrapper{
+  display: flexbox;
+  flex-flow: row;
+  max-width: 75%;
+}
+
+.PostTitleWrapper{
+    width: 100%;
+    max-height: 20%;
+    border-bottom: 10px;
+    border-style: solid;
+    border-color: var(--header-border);
+}
+
+.PostTitle{
+    font-family: var(--placeholder-text-redditt-title-text-subredditheading);
+    font-size: larger;
+}
+
+.PostLinkWrapper{
+    width:100%;
+    max-height:60%;
+    background-color: var(--reddit-subreddit-card-background);
+}
+
+.PostLink{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.PostDetailsWrapper{
+  display: inline-block;
+  width:100% ;
+  background-color: var(--secondary-card-background); 
+justify-content: space-between;
+align-content: center;
+}
+
+.Avatar.reddit-author{
+    width: 35%;
+}
+
+.createTime{
+    font-family: var(--reddit-created-font);
+    font-size: medium;
+}
+
+.PostCommentWrapper{
+    display: inline-flex;
+    justify-content: center;
+
+}
+
+.totalComment{
+    font-family: var(--reddit-created-font);
+    font-size: medium;
+}

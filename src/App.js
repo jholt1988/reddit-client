@@ -1,5 +1,5 @@
 import React from 'react';
-const styles = require('./redditClient.modules.css')
+const styles = require('./redditClient.module.css')
 
 
 
