@@ -1,13 +1,146 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+:root {
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    /* Colors: */
+    --secondary-card-background: #E61111;
+    --popout-page-overlay: #000000;
+    --error-no-results-page-overlay: #262222;
+    --logo-subreddit-name-font: #EE1010;
+    --subreddit-card-background: #505050;
+    --comment-button-outline: #E10F0F;
+    --unnamed-color-ae6b6b: #AE6B6B;
+    --reddit-created-font: #5B5A5A;
+    --comment-vote-number: #DB0C0C;
+    --up-down-vote-icon-default: #C81084;
+    --reddit-subreddit-card-background: #707070;
+    --h6-comment: #FFFFFF;
+    --placeholder-text-redditt-title-text-subredditheading: #CFBDBD;
+    --search-field-border: #AFA5D1;
+    --search-bar-background-default: #C28484;
+    --reddit-author-subreddit-heading-subreddit-name-font: #F91414;
+    --logo-border: #E9DDDD;
+    --header-border: #A75C50;
+    --header-background: #6B0505;
+    --background-color: #4D2A2A ;
+    /* Font/text values */
+    --unnamed-font-family-battery-park: Battery Park;
+    --unnamed-font-family-rama-gothic-e: Rama Gothic E;
+    --unnamed-font-style-normal: normal;
+    --unnamed-font-weight-100: 100px;
+    --unnamed-font-weight-normal: normal;
+    --unnamed-font-size-26: 26px;
+    --unnamed-font-size-28: 28px;
+    --unnamed-font-size-30: 30px;
+    --unnamed-font-size-41: 41px;
+    --unnamed-font-size-46: 46px;
+    --unnamed-character-spacing-0: 0px;
+    --unnamed-character-spacing-1-3: 1.3px;
+    --unnamed-character-spacing-1-4: 1.4px;
+    --unnamed-character-spacing-0-45: 0.45px;
+    --unnamed-character-spacing-2-3: 2.3px;
+    --unnamed-character-spacing-1-5: 1.5px;
+    --unnamed-character-spacing-1-05: 1.05px;
+    --unnamed-line-spacing-33: 33px;
+    --unnamed-line-spacing-36: 36px;
+    --unnamed-line-spacing-38: 38px;
+    --unnamed-line-spacing-52: 52px;
+    --unnamed-line-spacing-59: 59px;
+    --unnamed-text-transform-uppercase: uppercase;
+    
+    
+    
+      --color-alert: #ff304f;
+      --color-success: #45b81f;
+      --color-on-hover: #0000000f;
+    
+      --box-shadow: 0 10px 15px -3px rgba(219, 195, 195, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+      --box-shadow-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    
+   }
+    /* Character Styles */
+    .h3{
+    font-family: var(--unnamed-font-family-battery-park);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-30);
+    line-height: var(--unnamed-line-spacing-38);
+    letter-spacing: var(--unnamed-character-spacing-0-45);
+    color: var(--reddit-author-subreddit-heading-subreddit-name-font);
+    }
+    .h4 {
+    font-family: var(--unnamed-font-family-battery-park);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-28);
+    line-height: var(--unnamed-line-spacing-36);
+    letter-spacing: var(--unnamed-character-spacing-1-4);
+    color: var(--reddit-author-subreddit-heading-subreddit-name-font);
+    }
+    .reddit-create-time {
+    font-family: var(--unnamed-font-family-rama-gothic-e);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-100);
+    font-size: var(--unnamed-font-size-30);
+    line-height: var(--unnamed-line-spacing-36);
+    letter-spacing: var(--unnamed-character-spacing-1-05);
+    color: var(--reddit-created-font);
+    text-transform: var(--unnamed-text-transform-uppercase);
+    }
+    .h4-reddit-author {
+    font-family: var(--unnamed-font-family-battery-park);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-26);
+    line-height: var(--unnamed-line-spacing-33);
+    letter-spacing: var(--unnamed-character-spacing-1-3);
+    color: var(--reddit-author-subreddit-heading-subreddit-name-font);
+    }
+    .h5 {
+    font-family: var(--unnamed-font-family-rama-gothic-e);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-100);
+    font-size: var(--unnamed-font-size-30);
+    line-height: var(--unnamed-line-spacing-36);
+    letter-spacing: var(--unnamed-character-spacing-1-5);
+    color: var(--comment-vote-number);
+    text-transform: var(--unnamed-text-transform-uppercase);
+    }
+    .h1 {
+    font-family: var(--unnamed-font-family-battery-park);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-46);
+    line-height: var(--unnamed-line-spacing-59);
+    letter-spacing: var(--unnamed-character-spacing-2-3);
+    color: var(--reddit-author-subreddit-heading-subreddit-name-font);
+    }
+    .h5-search-placeholder-text {
+    font-family: var(--unnamed-font-family-rama-gothic-e);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-100);
+    font-size: var(--unnamed-font-size-30);
+    line-height: var(--unnamed-line-spacing-36);
+    letter-spacing: var(--unnamed-character-spacing-1-5);
+    color: var(--reddit-author-subreddit-heading-subreddit-name-font);
+    text-transform: var(--unnamed-text-transform-uppercase);
+    }
+    .unnamed-character-style-1 {
+    font-family: var(--unnamed-font-family-battery-park);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-41);
+    line-height: var(--unnamed-line-spacing-52);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--reddit-author-subreddit-heading-subreddit-name-font);
+    }
+    
+    
+
+
+
+
+body, div, p {
+    margin: 0;
+    padding: 0;
 }
