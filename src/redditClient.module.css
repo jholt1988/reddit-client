@@ -87,3 +87,83 @@ align-content: center;
     font-family: var(--reddit-created-font);
     font-size: medium;
 }
+
+.vote-container{
+    display:flex;
+    flex-flow: row nowrap;
+    height: 30%;
+    width:30%
+}
+
+.button{
+    width: 40px;
+    height: 40px;
+}
+
+.searchBar{
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    background-color: var(--secondary-card-background);
+}
+
+.Header{
+    display: flex;
+    flex-flow: column;
+    width: 100vw;
+    height: 30vh;
+    border: 10px;
+    border-style: solid;
+    border-color: var(--header-border);
+    justify-content: flex-start;
+    align-content: center;
+    background-color: var(--reddit-author-subreddit-heading-subreddit-name-font);
+}
+
+.LogoContainer{
+    align-self: center;
+    margin: 25px;
+}
+
+.Logo{
+    font-family: var(--h-1-family-Battery Park);;
+    font-weight:500;
+    font-size: 41px;
+}
+.Comment{
+    display:flex;
+    flex-direction: row nowrap;
+    align-content: center;
+    background-color: var(--secondary-card-background);
+}
+
+.Avatar.commentAuthor{
+    width:35%;
+    align-self: flex-start;
+}
+.commentContainer{
+    display: block;
+    justify-self: flex-start;
+}
+
+.commentText{
+    justify-self: left;
+    align-self: center;
+    font-family: var(--reddit-create-time-family);
+
+}
+
+.Subreddit{
+    display: block;
+    align-self: center;
+    justify-self: center;
+    padding-bottom: 15px;
+}
+
+.Avatar.subreddit{
+    height: 80%;
+    width: 80%;
+    font-family: var(--reddit-author-subreddit-heading-subreddit-name-font);
+    font-size: medium;
+}

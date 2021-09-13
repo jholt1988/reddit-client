@@ -1,12 +1,13 @@
 import React from 'react';
-const styles = require('../../redditClient.modules.css')
+import style from '../../redditClient.module.css'
 
 export const Avatar = (props) => {
+    const {type, icon_img, title} = props
     return (
-       <div className={styles.Avatar} type={props.type}>
-           <span className={styles.type} >
-               <img className='avatar-image' src={props.icon_img} alt={`${props.type} avatar`}/>
-               <p className={`${styles.title}${props.type}`}>{props.title}</p>
+       <div className={style.Avatar} type={type}>
+           <span className={style.type} >
+               <img className='avatar-image' src={icon_img} alt={`${props.type} avatar`}/>
+               <p className={`${style.title}${props.type}`}>{title}</p>
            </span>
        </div>
     )

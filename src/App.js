@@ -1,11 +1,11 @@
 import React from 'react';
-const styles = require('./redditClient.module.css')
+import style from './redditClient.module.css' 
 
 
 
  const App = () => { 
      return(
- <div className={styles.App} />
+ <div className={style.App} />
 
       ) }
 export default App;

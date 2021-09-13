@@ -4,5 +4,7 @@ import Post from  './Post'
 
 
 it('renders posts correctly', ()=>{
-    render(<Post></Post>)
+    render(<Post></Post>
+    
+    )
 })
