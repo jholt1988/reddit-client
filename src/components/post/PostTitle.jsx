@@ -1,7 +1,5 @@
 import React from "react";
-
-
-const style = require('*.module.css')
+import style from '../../redditClient.module.css'
 
 
 export const PostTitle = (props) => {

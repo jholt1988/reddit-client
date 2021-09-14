@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { TiArrowUpThick, TiArrowDownThick} from 'react-icons/ti'
-const style = require('*.module.css')
+import style from '../../redditClient.module.css'
 
 export const VoteContainer = (props) => {
     const [voteTotal, setVoteTotal] = useState(voteTotal);

@@ -7,7 +7,7 @@ export const SearchBar = (props) => {
    const{onsubmit} = props
     return(
         <form className={style.searchBar} type='search' >
-            <input value='' placeholder='Search' />
+            <input  placeholder='Search' />
             <button type='submit' onSubmit={onsubmit}><FiSearch/></button>
         </form>
     )

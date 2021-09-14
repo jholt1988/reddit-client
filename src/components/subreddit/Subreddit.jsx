@@ -6,7 +6,7 @@ import style from '../../redditClient.module.css'
 export const Subreddit = (props) =>{
     const {subreddit, onclick} = props;
     return(
-        <Card className={style.Subreddit} subreddit={subreddit} key={subreddit.id} onClick={onclick}>
+        <Card className={style.Subreddit} subreddit={subreddit} >
             <button type='button' onClick={onclick}>
                 <Avatar type='subreddit' icon_img={subreddit.icon_img} title={subreddit.title}/>
             </button>

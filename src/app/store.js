@@ -1,15 +1,19 @@
 import {configureStore} from '@reduxjs/toolkit';
 import { combineReducers } from 'redux';
+import redditReducer from './slices/redditSlice';
+import subredditsReducer from './slices/subredditSlice'
 
-const reducers = combineReducers({
-    reducer:{
-        
-    
-    }
-} 
-)
 
 
 export const store = configureStore({
-    reducers
-})
+    reducer:{
+        reddit: redditReducer,
+        subreddit: subredditsReducer
+    
+    }
+} 
+
+    
+)
+
+export default store

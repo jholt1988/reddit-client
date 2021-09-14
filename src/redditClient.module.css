@@ -167,3 +167,18 @@ align-content: center;
     font-family: var(--reddit-author-subreddit-heading-subreddit-name-font);
     font-size: medium;
 }
+
+.Home{
+    display: flex;
+    flex-direction: row nowrap;
+    max-width: 60vw;
+    margin: 30px, 10px, 20px, 20px;
+    background-color: var(--reddit-subreddit-card-background);
+}
+
+.SubredditContainer{
+    background-color: var(--reddit-subreddit-card-background);
+    display: block;
+    max-width: 40vw;
+
+}
